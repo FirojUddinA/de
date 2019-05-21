@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-active {
+    background-color: #BBB8B8;
+    color: #ffffff;
+}
+
+.nav-active-link {
+    color: #ffffff;
+}
+
+.casetas h2,
+.materiales h1,
+h2 {
+    font-family: Georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+    color: #969696;
+    font-size: 45px;
+}
+
+.paragraph {
+    font-family: Arial, 'book antiqua', 'palatino linotype', serif;
+    font-size: 18px;
+    color: #646464;
+    padding: 0 5px 0 0;
+}
+
+/* navbar Start */
+
+.navbar {
+    padding: 0 !important;
+}
+
+nav {
+    box-shadow: 0px 5px 5px #A5A4A4;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    width: 100%;
+
+}
+
+nav ul li {
+    flex: 1;
+    list-style: none;
+    padding: 10px 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0ea2cc;
+    display: block;
+}
+
+nav ul li:hover {
+    background-color: #F8F6F6;
+}
+
+nav ul li:hover a {
+    color: #252525;
+    text-decoration: none;
+
+}
+
+/*  navbar End     */
+
+/*  Entrega Start   */
+.entrega-content {
+    padding-bottom: 10px;
+}
+
+.entrega-header h2 {
+    font-size: 41px;
+    line-height: 40px;
+    padding: 10px 0 15px;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+/*Entrega End*/
+
+/*materiales Start*/
+.materiales {
+    border-top: 1px solid #000000;
+}
+
+.materiales hr {
+    background-color: #000000;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+/*materiales End*/
+
+
+/*main-content Start*/
+
+#contentControls {
+    position: relative;
+}
+
+#contentControls .slider2-heading {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    background-color: rgba(27, 189, 236, 0.7);
+}
+
+.slider2-heading h2 {
+    font-size: 25px;
+    color: #ffffff;
+    padding: 5px 10px;
+}
+
+.casetas {
+    position: relative;
+}
+
+.image-heading {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.casetas h2 {
+
+    font-size: 25px;
+    color: #ffffff;
+    padding: 5px 10px;
+}
+
+
+
+.entregas {
+    position: relative;
+}
+
+.entregas .carousel-inner:before {
+    position: absolute;
+    content: '';
+    width: 140px;
+    height: 140px;
+    background-color: #ffffff;
+    bottom: -70px;
+    right: -70px;
+    z-index: 1;
+    transform: rotate(45deg);
+    overflow: hidden;
+}
+
+.entregas-image-heading {
+    position: absolute;
+    top: 30%;
+    left: 0;
+
+}
+
+.entregas h2 {
+
+    font-size: 40px;
+    color: #ffffff;
+    padding: 5px 50px 5px 30px;
+    background-color: rgba(189, 188, 188, 0.55);
+}
+
+.mojor {
+    position: relative;
+}
+
+.mojor-image-heading {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: block;
+    background-color: rgba(27, 189, 236, 0.7);
+}
+
+.mojor h2 {
+
+    font-size: 36px;
+    color: #ffffff;
+    padding: 5px 10px;
+}
+
+/*main-content End*/
+
+
+/*footer Start*/
+footer {
+    background-color: #bbb8b8;
+}
+
+footer p {
+    color: #f8f6f6;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 768px) and (max-width:991px) {
+    .entrega-header h2 {
+        font-size: 29px;
+        line-height: 25px
+    }
+
+
+}
