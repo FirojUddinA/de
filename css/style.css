@@ -33,6 +33,12 @@ h2 {
     padding: 0 !important;
 }
 
+.navbar-toggler {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
 nav {
     box-shadow: 0px 5px 5px #A5A4A4;
 }
