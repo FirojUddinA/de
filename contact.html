@@ -56,15 +56,16 @@
                             <div class="row">
                                 <div class="col-12 col-md-6 px-sm-1">
                                     <input type="text" placeholder="nombre *" name="name" required="required">
-                                    <input type="email" placeholder="Email *" name="email" required="required" class="">
+                                    <input type="email" placeholder="Email *" name="email" required="required" id="validEmail">
                                     <input type="text" placeholder="telefono " name="phone" >
                                 </div>
-                                <div class="col-12 col-md-6 px-sm-1">
+                                <div class="col-12 col-md-6 px-sm-1 ">
                                     <textarea name="massage" placeholder="Mensaje *" required="required"></textarea>
+                                    <button type="submit" class="float-right" id="submit">enviar</button>
                                 </div>
                                 <div class="col-12 px-sm-1">
-                                    <p class="float-left ">su email no es correcto</p>
-                                    <button type="submit" class="float-right" id="submit">enviar</button>
+                                    <p class="float-left"></p>
+
                                 </div>
                             </div>
                         </form>
@@ -116,9 +117,18 @@
     <!-- End-->
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
     <!-- Bootstrap js-->
 
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-validate.js" ></script>
+
+    <script>
+        bootstrapValidate(
+            '#validEmail',
+            'email:su email no es correcto'
+        );
+    </script>
 </body>
 
 </html>
