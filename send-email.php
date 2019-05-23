@@ -6,7 +6,7 @@ if(isset($_POST['name'])&& isset($_POST['email'])){
     $email = $_POST['email'];
     $subject = $_POST['phone'];
     $message = $_POST['message'];
-    $to = 'shohag14748@gmail.com';
+    $to = 'techosycasetas@hotmail.com';
     $body = " <html>
 <body>
 <h2>Message From The serramart.com.mx </h2>
@@ -25,5 +25,5 @@ $send = mail($to,$subject,$body,$headers);
 
 
 
-header('Location: http://serramart.com.mx/contact.html');
+header('Location:http://serramart.com.mx/contact.html');
 exit;
