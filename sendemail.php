@@ -26,7 +26,7 @@ if(isset($_POST['first_name'])&& isset($_POST['email'])){
     $send = mail($to,$subject,$body,$headers);
 }
 
-header('Location:http://serramart.com.mx/contact.html');
+header('Location:https://firojuddina.github.io/de/contact.html');
 exit;
 
 ?>
