@@ -51,6 +51,7 @@
                 </div>
                 <div class="col-12 col-md-8   pb-4 pb-md-0 px">
                     <!-- contact-form-->
+<!--
                     <div class="contact-form">
                         <form action="send-email.php" method="post">
                             <div class="row">
@@ -60,7 +61,7 @@
                                     <input type="text" placeholder="telefono " name="phone" >
                                 </div>
                                 <div class="col-12 col-md-6 px-sm-1 ">
-                                    <textarea name="massage" placeholder="Mensaje *" required="required"></textarea>
+                                    <textarea name="message" placeholder="Mensaje *" required="required"></textarea>
                                     <button type="submit" class="float-right" id="submit">enviar</button>
                                 </div>
                                 <div class="col-12 px-sm-1">
@@ -70,7 +71,44 @@
                             </div>
                         </form>
                     </div>
+-->
                     <!-- contact-form-->
+                    
+                    
+                    <form id="main-contact-form" name="contact-form" method="post" action="sendemail.php">
+
+<div class="row">
+    <div class="col-12 col-md-6 px-sm-1">
+                            <div class="form-group">
+                                <input type="text" id="first_name" name="first_name" class="form-control" required="required" placeholder="Nombre">
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="text" id="last_name" name="last_name" class="form-control" required="required" placeholder="Apellidos">
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="text" id="telephone" name="telephone" class="form-control" required="required" placeholder="Teléfono">
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" class="form-control" required="required" placeholder="e-m@il">
+                            </div>
+     </div>
+     <div class="col-12 col-md-6 px-sm-1 ">
+                            <div class="form-group">
+                                <textarea id="comments" name="comments" required="required" class="form-control" rows="8" placeholder="Tu mensaje..."></textarea>
+                            </div>       
+                            
+                            <div class="form-group" align="right">
+                                <input type="submit" name="submit" class="btn btn-submit" value="Enviar">
+                            </div>
+    </div>                    
+                        
+                    <!-- contact-form-->
+
+
+                </div></form>
 
 
                 </div>
@@ -132,3 +170,11 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
